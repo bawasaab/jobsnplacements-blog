@@ -4,11 +4,7 @@ import { CommonModule, NgFor, NgIf } from '@angular/common';
 import { RouterOutlet, RouterModule } from '@angular/router';
 import { HeaderComponent } from "./header/header.component";
 import { FooterComponent } from "./footer/footer.component";
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatListModule } from '@angular/material/list';
+import { SharedModule } from '../shared/shared.module';
 
 @Component({
     selector: 'app-layout',
@@ -16,13 +12,7 @@ import { MatListModule } from '@angular/material/list';
     templateUrl: './layout.component.html',
     styleUrls: ['./layout.component.css'],
     imports: [CommonModule, RouterOutlet, RouterModule, HeaderComponent, FooterComponent,
-      NgIf,
-      MatToolbarModule,
-      MatButtonModule,
-      MatIconModule,
-      MatSidenavModule,
-      MatListModule,
-      NgFor,
+      SharedModule
     ]
 })
 export class LayoutComponent {

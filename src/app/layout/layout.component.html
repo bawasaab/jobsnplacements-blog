@@ -2,7 +2,13 @@
 <div class="example-container" [class.example-is-mobile]="mobileQuery.matches" >
     <mat-toolbar color="primary" class="example-toolbar">
       <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
-      <h1 class="example-app-name">Jobsnplacements.com</h1>
+        <h1 class="example-app-name">
+            <mat-form-field appearance="fill" class="searchBox">
+                <mat-label>Search Something</mat-label>
+                <input type="text" matInput placeholder="Type something..">
+                <mat-icon matSuffix>search</mat-icon>
+            </mat-form-field>
+        </h1>
     </mat-toolbar>
   
     <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">

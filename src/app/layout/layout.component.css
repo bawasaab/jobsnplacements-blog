@@ -30,3 +30,8 @@
     flex: 1 0 auto;
   }
   
+  .searchBox {
+    margin-top: 39px;
+    position: relative;
+    margin-right: 0px;
+  }
