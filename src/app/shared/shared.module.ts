@@ -9,6 +9,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 const sharedModules = [
   MatIconModule,
@@ -23,7 +24,8 @@ const sharedModules = [
   MatListModule,
   NgFor,
   MatFormFieldModule,
-  MatInputModule
+  MatInputModule,
+  MatGridListModule
 ]
 
 @NgModule({
